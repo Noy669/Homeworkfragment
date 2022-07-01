@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FullscreenFragment">
+
+
+    <LinearLayout
+        android:id="@+id/ll_firstLine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#86A5A1"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@id/ll_secondLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_woman"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#719394">
+
+            <ImageView
+                android:id="@+id/iv_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_girl_24"
+                app:layout_constraintBottom_toBottomOf="@id/cl_woman"
+                app:layout_constraintEnd_toEndOf="@id/cl_woman"
+                app:layout_constraintStart_toStartOf="@id/cl_woman"
+                app:layout_constraintTop_toTopOf="@id/cl_woman"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/woman"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/cl_woman"
+                app:layout_constraintEnd_toEndOf="@id/cl_woman"
+                app:layout_constraintStart_toStartOf="@id/cl_woman"
+                app:layout_constraintTop_toBottomOf="@id/iv_woman" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_man"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#5E7878">
+
+            <ImageView
+                android:id="@+id/iv_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_man"
+                app:layout_constraintBottom_toBottomOf="@id/cl_man"
+                app:layout_constraintEnd_toEndOf="@id/cl_man"
+                app:layout_constraintStart_toStartOf="@id/cl_man"
+                app:layout_constraintTop_toTopOf="@id/cl_man" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/man"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/cl_man"
+                app:layout_constraintEnd_toEndOf="@id/cl_man"
+                app:layout_constraintStart_toStartOf="@id/cl_man"
+                app:layout_constraintTop_toBottomOf="@id/iv_man" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_secondLine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@id/ll_thirdLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_firstLine">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_baby"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#5B8086">
+
+            <ImageView
+                android:id="@+id/iv_baby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_child_friendly_24"
+                app:layout_constraintBottom_toBottomOf="@id/cl_baby"
+                app:layout_constraintEnd_toEndOf="@id/cl_baby"
+                app:layout_constraintStart_toStartOf="@id/cl_baby"
+                app:layout_constraintTop_toTopOf="@id/cl_baby"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/baby"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/cl_baby"
+                app:layout_constraintEnd_toEndOf="@id/cl_baby"
+                app:layout_constraintStart_toStartOf="@id/cl_baby"
+                app:layout_constraintTop_toBottomOf="@id/iv_baby" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_travel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#486F76">
+
+            <ImageView
+                android:id="@+id/iv_travel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_travel"
+                app:layout_constraintBottom_toBottomOf="@id/cl_travel"
+                app:layout_constraintEnd_toEndOf="@id/cl_travel"
+                app:layout_constraintStart_toStartOf="@id/cl_travel"
+                app:layout_constraintTop_toTopOf="@id/cl_travel"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/travel"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/cl_travel"
+                app:layout_constraintEnd_toEndOf="@id/cl_travel"
+                app:layout_constraintStart_toStartOf="@id/cl_travel"
+                app:layout_constraintTop_toBottomOf="@id/iv_travel" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_thirdLine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_secondLine">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_tech"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#3C626B">
+
+            <ImageView
+                android:id="@+id/iv_tech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_tech"
+                app:layout_constraintBottom_toBottomOf="@id/cl_tech"
+                app:layout_constraintEnd_toEndOf="@id/cl_tech"
+                app:layout_constraintStart_toStartOf="@id/cl_tech"
+                app:layout_constraintTop_toTopOf="@id/cl_tech"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tech"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/cl_tech"
+                app:layout_constraintEnd_toEndOf="@id/cl_tech"
+                app:layout_constraintStart_toStartOf="@id/cl_tech"
+                app:layout_constraintTop_toBottomOf="@id/iv_tech" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_food"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#2D5161">
+
+        <ImageView
+            android:id="@+id/iv_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_food"
+            app:layout_constraintBottom_toBottomOf="@id/cl_food"
+            app:layout_constraintEnd_toEndOf="@id/cl_food"
+            app:layout_constraintStart_toStartOf="@id/cl_food"
+            app:layout_constraintTop_toTopOf="@id/cl_food"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Drink"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/cl_food"
+            app:layout_constraintEnd_toEndOf="@id/cl_food"
+            app:layout_constraintStart_toStartOf="@id/cl_food"
+            app:layout_constraintTop_toBottomOf="@id/iv_food" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

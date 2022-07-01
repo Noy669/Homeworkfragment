@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Homework fragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="categories">Categories</string>
+    <string name="women">Women</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="woman">Woman</string>
+    <string name="man">Man</string>
+    <string name="baby">Baby</string>
+    <string name="travel">Travel</string>
+    <string name="tech">Tech</string>
+</resources>

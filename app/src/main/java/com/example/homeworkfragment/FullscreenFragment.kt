@@ -1,0 +1,35 @@
+package com.example.homeworkfragment
+
+import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.view.WindowManager
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import com.example.homeworkfragment.databinding.FragmentFullscreenBinding
+
+/**
+ * An example full-screen fragment that shows and hides the system UI (i.e.
+ * status bar and navigation/system bar) with user interaction.
+ */
+class FullscreenFragment : Fragment() {
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val view = inflater.inflate(R.layout.fragment_fullscreen, container, false)
+
+        return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+    }
+}

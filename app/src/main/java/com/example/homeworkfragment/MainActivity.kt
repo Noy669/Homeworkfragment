@@ -1,0 +1,16 @@
+package com.example.homeworkfragment
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        addMainFragmentToActivity()
+    }
+
+    private fun addMainFragmentToActivity(){
+        supportFragmentManager.beginTransaction().add(R.id.container, BlankFragment()).commit()
+    }
+}

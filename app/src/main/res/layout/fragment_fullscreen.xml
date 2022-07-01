@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FullscreenFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_categories"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#78A5A2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/category_logo"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/ic_category"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingClass" />
+
+        <TextView
+            android:id="@+id/tv_categories"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/categories"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_vertical"
+        android:weightSum="3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/ll_categories"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_firstLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#86A5A1"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <View
+                android:id="@+id/firstLine_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_woman"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="vertical"
+                />
+            <View
+                android:id="@+id/firstLine_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_man"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_secondLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="1"
+            >
+
+            <View
+                android:id="@+id/secondLine_first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/ic_baby_bacground"
+                android:layout_weight="1"/>
+
+            <View
+                android:id="@+id/secondLine_second"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/ic_travel"
+                android:layout_weight="1"
+                /></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_thirdLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="1"
+            >
+
+            <View
+                android:id="@+id/thirdLine_first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/ic_tech"
+                android:layout_weight="1"/>
+
+            <View
+                android:id="@+id/thirdLine_second"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/ic_food"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#234156"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
